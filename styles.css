@@ -1,0 +1,318 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Sora", sans-serif;
+}
+
+/* Header - Nav Bar */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50rem;
+
+  margin: 3.2rem 0 6.4rem 0;
+}
+
+.header-text {
+  font-size: 2.8rem;
+  font-weight: 500;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 6.4rem;
+}
+
+.nav-ul {
+  display: flex;
+  list-style: none;
+  gap: 2.4rem;
+}
+
+.nav-li {
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #000;
+}
+
+.header-btn,
+.search-btn,
+.about-btn {
+  font-size: 1.2rem;
+  font-family: inherit;
+  letter-spacing: 0.5px;
+
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+
+  background-color: #000;
+  color: #fff;
+
+  padding: 1.2rem 2rem;
+  cursor: pointer;
+
+  transition: all 0.5s;
+}
+
+.header-btn:hover,
+.search-btn:hover,
+.about-btn:hover {
+  background-color: #333333;
+}
+
+/* Hero Section */
+
+.hero-section {
+  display: grid;
+  grid-template-columns: 46rem 33rem;
+  justify-content: center;
+  align-items: center;
+  gap: 30rem;
+
+  margin-bottom: 6.4rem;
+}
+
+.hero-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.hero-heading {
+  font-size: 3.6rem;
+}
+
+.hero-text {
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
+}
+
+.hero-search {
+  width: 35rem;
+  font-family: inherit;
+  font-size: 1.5rem;
+
+  padding: 1.4rem 1.2rem;
+  border-radius: 0.5rem;
+  border: 0.5px solid #b4b4b4;
+}
+
+.search-btn {
+  width: 35rem;
+  font-size: 1.4rem;
+}
+
+.hero-img {
+  width: 33rem;
+  animation: floatingAnimation 1.8s infinite alternate;
+}
+
+@keyframes floatingAnimation {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(15px);
+  }
+}
+
+/* About Us */
+
+.about-us {
+  display: grid;
+  grid-template-columns: 40rem 46rem;
+  justify-content: center;
+  align-items: center;
+  gap: 22rem;
+
+  margin-bottom: 6.4rem;
+}
+
+.about-strapline {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+}
+
+.about-heading,
+.packages-heading,
+.testimonial-heading {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 1.4rem;
+}
+
+.about-time {
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+
+  margin-bottom: 1.8rem;
+}
+
+.about-date,
+.about-name {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+
+  font-size: 1.2rem;
+}
+
+.about-icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.about-text {
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+
+.about-btn {
+  margin-top: 3.2rem;
+}
+
+.about-img {
+  width: 40rem;
+  border-radius: 0.5rem;
+  animation: floatingAnimation 1.8s infinite alternate;
+}
+
+/* Check Plans */
+
+.packages-plan {
+  display: grid;
+  grid-template-columns: 108rem;
+  justify-content: center;
+  gap: 3.2rem;
+
+  margin-bottom: 6.4rem;
+}
+
+.package {
+  transition: all 0.7s;
+  cursor: pointer;
+}
+
+.package:hover {
+  transform: translateY(-15px);
+}
+
+.packages-heading {
+  grid-column: 1 / -1;
+}
+
+.packages-grid {
+  display: grid;
+  justify-content: start;
+  grid-template-columns: repeat(5, 20rem);
+  gap: 9.8rem;
+}
+
+.plan-img {
+  width: 20rem;
+  border-radius: 0.5rem;
+}
+
+.package-tour-info {
+  font-size: 1.4rem;
+  color: rgba(0, 0, 0, 0.679);
+  margin: 1.4rem 0 0.8rem 0;
+}
+
+.package-heading {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+
+  line-height: 1.6;
+}
+
+.location-rating {
+  display: flex;
+  justify-content: space-between;
+}
+
+.package-location,
+.package-rating {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.package-location {
+  color: #000;
+}
+
+.package-rating {
+  color: #00ff00;
+}
+
+.package-icon {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.package-icon-location {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+
+/* Testimonial */
+
+.testimonial {
+  display: grid;
+  grid-template-columns: 108rem;
+  justify-content: center;
+  gap: 2.8rem;
+}
+
+.testimonial-group {
+  display: grid;
+  grid-template-columns: repeat(3, 32rem);
+  gap: 8.8rem;
+}
+
+.review-img {
+  border-radius: 50%;
+  width: 5.2rem;
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.review-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.review-text {
+  font-size: 1.6rem;
+  color: rgba(0, 0, 0, 0.7);
+}
