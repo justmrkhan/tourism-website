@@ -20,7 +20,7 @@ body {
   justify-content: center;
   gap: 50rem;
 
-  margin: 3.2rem 0 6.4rem 0;
+  margin: 3.2rem 0 9.6rem 0;
 }
 
 .header-text {
@@ -54,7 +54,8 @@ body {
 
 .header-btn,
 .search-btn,
-.about-btn {
+.about-btn,
+.news-btn {
   font-size: 1.2rem;
   font-family: inherit;
   letter-spacing: 0.5px;
@@ -192,10 +193,15 @@ body {
   margin-top: 3.2rem;
 }
 
-.about-img {
+.about-img,
+.about-us-img {
   width: 40rem;
   border-radius: 0.5rem;
   animation: floatingAnimation 1.8s infinite alternate;
+}
+
+.about-us-img {
+  width: 35rem;
 }
 
 /* Check Plans */
@@ -288,6 +294,8 @@ body {
   grid-template-columns: 108rem;
   justify-content: center;
   gap: 2.8rem;
+
+  margin-bottom: 9.6rem;
 }
 
 .testimonial-group {
@@ -315,4 +323,63 @@ body {
 .review-text {
   font-size: 1.6rem;
   color: rgba(0, 0, 0, 0.7);
+}
+
+/* Newsletter CTA */
+
+.newsletter-signup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-bottom: 9.6rem;
+}
+
+.news-signup-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70rem;
+
+  gap: 2.4rem;
+
+  background-position: center;
+  background-size: cover;
+  background-image: url("images/nyc-banner.jpg");
+  padding: 8rem 6.4rem;
+
+  border-radius: 1rem;
+}
+
+.news-heading {
+  font-size: 2.4rem;
+  color: #fff;
+  text-align: center;
+  font-weight: 500;
+}
+
+.news-enter {
+  border: 0.5px solid #e1e1e1;
+  border-radius: 0.5rem;
+  padding: 1.2rem;
+  font-size: 1.2rem;
+  height: 3.7rem;
+  font-family: inherit;
+}
+
+.news-btn {
+  font-size: 1.1rem;
+  background-color: #fff;
+  color: #000;
+}
+
+.footer {
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 3.2rem;
+}
+
+.footer-link {
+  text-decoration: none;
+  font-weight: 500;
 }

@@ -7,6 +7,9 @@ const sr = ScrollReveal({
   reset: true,
 });
 
-sr.reveal(`header, .hero-section, .about-us, .packages-plan, .about-us`, {
-  delay: 50,
-});
+sr.reveal(
+  `header, .hero-section, .packages-plan, .about-us, .testimonial, .newsletter-signup, .footer`,
+  {
+    delay: 50,
+  }
+);
