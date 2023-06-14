@@ -57,7 +57,6 @@
 
   .hero-section {
     grid-template-columns: 41rem 30rem;
-    justify-content: center;
     gap: 9rem;
   }
 
@@ -116,4 +115,192 @@
 
 @media (max-width: 54.9em) {
   /* Mobile Navigation - Tablet View */
+
+  .header {
+    gap: 42rem;
+    margin: 3.2rem 0 4.8rem 0;
+  }
+
+  .nav-open-btn {
+    display: block;
+  }
+
+  .nav-open .nav-open-btn {
+    display: none;
+  }
+
+  .nav-open .nav-close-btn {
+    display: block;
+  }
+
+  .nav-ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-size: 2.4rem;
+    font-weight: 500;
+  }
+
+  .nav-open .header-btn {
+    font-size: 1.4rem;
+  }
+
+  .navigation {
+    flex-direction: column;
+    font-size: 2.4rem;
+    font-weight: 500;
+
+    position: absolute;
+    top: -100%;
+    z-index: 5;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgba(255, 255, 255, 0.616);
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition: all 0.2s;
+  }
+
+  .nav-open .navigation {
+    top: 0%;
+
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+  }
+
+  .hero-section,
+  .about-us-real,
+  .about-us,
+  .packages-plan,
+  .testimonial {
+    grid-template-columns: 56rem;
+    text-align: center;
+  }
+
+  .hero-section {
+    gap: 3.2rem;
+  }
+
+  .hero-img,
+  .about-us-img,
+  .about-img,
+  .review-img {
+    grid-row: 1;
+    margin: 0 auto;
+  }
+
+  .hero-details {
+    align-items: center;
+  }
+
+  .about-time {
+    justify-content: center;
+  }
+
+  .packages-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonial-group {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3.2rem;
+  }
+
+  .news-signup-box {
+    width: 56rem;
+  }
+
+  .news-heading {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 39.2em) {
+  .header {
+    gap: 30rem;
+  }
+
+  .hero-section,
+  .about-us-real,
+  .about-us,
+  .testimonial {
+    grid-template-columns: 38rem;
+  }
+
+  .packages-plan {
+    grid-template-columns: 20rem;
+  }
+
+  .packages-grid {
+    grid-template-columns: repeat(1, 20rem);
+  }
+
+  .testimonial-group {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .news-signup-box {
+    width: 42rem;
+  }
+
+  .news-heading {
+    font-size: 1.8rem;
+  }
+
+  .news-btn {
+    font-size: 1rem;
+  }
+
+  .news-enter {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 30.18em) {
+  .header {
+    gap: 16rem;
+  }
+
+  .hero-img {
+    width: 26rem;
+  }
+
+  .hero-section,
+  .about-us-real,
+  .about-us,
+  .testimonial {
+    grid-template-columns: 32rem;
+  }
+
+  .hero-search,
+  .search-btn {
+    width: 30rem;
+  }
+
+  .news-signup-box {
+    width: 32rem;
+    padding: 8rem 2.4rem;
+  }
+
+  .about-img {
+    width: 30rem;
+  }
+
+  .hero-heading {
+    font-size: 3rem;
+  }
+
+  .news-box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.8rem;
+  }
 }
