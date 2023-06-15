@@ -44,6 +44,19 @@
     column-gap: 15rem;
     row-gap: 5.4rem;
   }
+
+  .contact-grid {
+    grid-template-columns: repeat(2, 18rem);
+  }
+
+  .contact-us {
+    grid-template-columns: 42rem;
+  }
+
+  .news-and-contact {
+    grid-template-columns: 43rem 44rem;
+    gap: 2.6rem;
+  }
 }
 
 @media (max-width: 68.8em) {
@@ -110,6 +123,23 @@
 
   .testimonial-group {
     grid-template-columns: repeat(2, 32.5rem);
+  }
+
+  .news-and-contact {
+    grid-template-columns: 56rem;
+    gap: 6.8rem;
+  }
+
+  .contact-us {
+    grid-template-columns: 75rem;
+  }
+
+  .contact-grid {
+    grid-template-columns: repeat(2, 35rem);
+  }
+
+  .news-signup-box {
+    margin: 0;
   }
 }
 
@@ -220,6 +250,39 @@
   .news-heading {
     font-size: 2.2rem;
   }
+
+  .contact-us {
+    grid-template-columns: 53rem;
+  }
+
+  .contact-grid {
+    grid-template-columns: repeat(2, 24rem);
+  }
+
+  .contact-details {
+    text-align: center;
+  }
+
+  .form-btn {
+    grid-column: 1/-1;
+  }
+
+  .news-signup-box {
+    text-align: center;
+    align-items: center;
+  }
+
+  .news-and-contact {
+    grid-template-columns: 41rem;
+  }
+
+  .contact-us {
+    grid-template-columns: 41rem;
+  }
+
+  .contact-grid {
+    grid-template-columns: repeat(2, 18rem);
+  }
 }
 
 @media (max-width: 39.2em) {
@@ -285,7 +348,7 @@
   }
 
   .news-signup-box {
-    width: 32rem;
+    width: 31rem;
     padding: 8rem 2.4rem;
   }
 
@@ -302,5 +365,15 @@
     align-items: center;
     flex-direction: column;
     gap: 1.8rem;
+  }
+
+  .news-and-contact,
+  .contact-us {
+    grid-template-columns: 31rem;
+  }
+
+  .contact-grid {
+    grid-template-columns: repeat(2, 14rem);
+    column-gap: 2.8rem;
   }
 }

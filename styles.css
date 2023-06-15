@@ -62,7 +62,8 @@ body {
 .header-btn,
 .search-btn,
 .about-btn,
-.news-btn {
+.news-btn,
+.form-btn {
   font-size: 1.2rem;
   font-family: inherit;
   letter-spacing: 0.5px;
@@ -179,7 +180,8 @@ body {
 
 .about-heading,
 .packages-heading,
-.testimonial-heading {
+.testimonial-heading,
+.contact-heading {
   font-size: 3rem;
   font-weight: 500;
   margin-bottom: 1.4rem;
@@ -350,34 +352,31 @@ body {
 
 /* Newsletter CTA */
 
-.newsletter-signup {
+/* .newsletter-signup {
   display: flex;
   flex-direction: column;
   align-items: center;
 
   margin-bottom: 9.6rem;
-}
+} */
 
 .news-signup-box {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 70rem;
-
-  gap: 2.4rem;
-
+  width: 45rem;
+  gap: 3.2rem;
   background-position: center;
   background-size: cover;
-  background-image: url("images/nyc-banner.jpg");
-  padding: 8rem 6.4rem;
+  background-image: url(images/nyc-banner.jpg);
+  padding: 4rem 4.4rem;
 
   border-radius: 1rem;
+  margin: 0 0 0 4.8rem;
 }
 
 .news-heading {
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   color: #fff;
-  text-align: center;
   font-weight: 500;
 }
 
@@ -395,6 +394,73 @@ body {
   background-color: #fff;
   color: #000;
 }
+
+/* Contact Form */
+
+.news-and-contact {
+  display: grid;
+  grid-template-columns: 56rem 45rem;
+  justify-content: center;
+  align-items: center;
+  gap: 7.6rem;
+
+  margin-bottom: 6.4rem;
+}
+
+.contact-us {
+  display: grid;
+  grid-template-columns: 55rem;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 25rem);
+  grid-template-rows: repeat(2, 7rem);
+  column-gap: 4.8rem;
+  row-gap: 2.4rem;
+}
+
+.contact-element {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.form-labels {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-text {
+  font-size: 1.5rem;
+}
+
+.first-name-field,
+.email-field,
+.mobile-field,
+.address-field {
+  height: 4rem;
+  border: 0.5px solid #3658c1;
+  border-radius: 0.5rem;
+}
+
+.form-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+
+  font-weight: 500;
+}
+
+/* Footer */
 
 .footer {
   font-size: 1.4rem;

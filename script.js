@@ -8,7 +8,7 @@ const sr = ScrollReveal({
 });
 
 sr.reveal(
-  `.hero-section, .packages-plan, .about-us, .about-us-real, .testimonial, .newsletter-signup, .footer`,
+  `.hero-section, .packages-plan, .about-us, .about-us-real, .testimonial, .news-and-contact, .footer`,
   {
     delay: 50,
   }
