@@ -450,6 +450,7 @@ body {
   border: 0.5px solid #3658c1;
   border-radius: 0.5rem;
   padding: 1.2rem;
+  font-family: inherit;
 }
 
 .form-btn {
